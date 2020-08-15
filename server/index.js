@@ -1,10 +1,10 @@
 const express = require('express')
-const cors = requier('cors')
+const cors = require('cors')
 const app = express()
+const path = require('path')
 
 app.use(cors())
+app.use(express.static(path.join(__dirname, '../public')))
 
-app.get('/', (req, res) => {
-  res.send('Hello from the server!')
-})
-app.listen(3000, () => console.log('Server running on port 3000'))
+
+app.listen(3003, () => console.log('Server running on port 3003'))
