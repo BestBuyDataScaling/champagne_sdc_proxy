@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: 'fec_serachbar_proxy',
+    name: 'fec_searchbar_proxy',
     script: './server/index.js'
   }],
   deploy: {
